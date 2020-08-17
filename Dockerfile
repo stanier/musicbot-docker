@@ -21,7 +21,7 @@
 
 FROM alpine:latest
 
-LABEL maintainer="dmuth@dmuth.org"
+LABEL maintainer="keyton@stanier.co"
 
 #
 # According to https://github.com/laradock/laradock/issues/1164#issuecomment-343484685, 
@@ -49,7 +49,7 @@ RUN apk add --update wget unzip libcurl \
 	#
 	# Clone the master branch of the codebase
 	#
-	&& git clone -b master --single-branch https://github.com/Just-Some-Bots/MusicBot.git /var/Musicbot \
+	&& git clone -b master --single-branch https://github.com/stanier/MusicBot.git /var/Musicbot \
 	#
 	# Install modules in Python
 	#
